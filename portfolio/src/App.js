@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
+import DotGroup from "./scenes/DotGroup.jsx";
 import Navbar from "./scenes/Navbar";
 
 function App() {
