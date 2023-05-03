@@ -74,7 +74,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            Enterprise Application Interfaces
           </div>
           <Project title="Morris Delta Realty" fileName="MdrLanding" />
           <Project title="StreamlineDashboard" fileName="StreamlineLanding" />
@@ -91,7 +91,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            SMOOTH USER EXPERIENCE
+            Professional & Clean Functionality
           </div>
         </motion.div>
       </div>

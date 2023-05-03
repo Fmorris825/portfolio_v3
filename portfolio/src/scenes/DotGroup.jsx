@@ -7,40 +7,44 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
       <AnchorLink
+        href="#home"
         className={`${
           selectedPage === "home" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
         onClick={() => setSelectedPage("home")}
-      ></AnchorLink>
+      />
+
       <AnchorLink
+        href="#skills"
         className={`${
           selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
         onClick={() => setSelectedPage("skills")}
-      ></AnchorLink>
+      />
+
       <AnchorLink
+        href="#projects"
         className={`${
           selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
         onClick={() => setSelectedPage("projects")}
-      ></AnchorLink>
+      />
+
       <AnchorLink
+        href="#testimonials"
         className={`${
           selectedPage === "testimonials" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
         onClick={() => setSelectedPage("testimonials")}
-      ></AnchorLink>
+      />
+
       <AnchorLink
+        href="#contact"
         className={`${
           selectedPage === "contact" ? selectedStyles : "bg-dark-grey"
         } w-3 h-3 rounded-full`}
-        href="home"
         onClick={() => setSelectedPage("contact")}
-      ></AnchorLink>
+      />
     </div>
   );
 };
