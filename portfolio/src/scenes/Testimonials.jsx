@@ -21,16 +21,16 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-2/5" />
         <p className="mt-10">
-          Here's What People are Saying About My Work. Aliquam aliquet integer
-          ut fames odio in at. At magna ornare dictum lectus.
+          Some comments from past colleagues, instructors, & clients of mine.
         </p>
       </motion.div>
 
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+          className="mx-auto  bg-blue max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          // className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -40,15 +40,19 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea.
+          <p className="font-playfair text-2xl">Nevin Seibel</p>
+          <p className="mb-5 font-light">Former Instructor</p>
+          <p className="italic">
+            "Fred was an excellent student who received top marks during his
+            time at devCodeCamp. I worked with Fred during his capstone project.
+            He is a quick learner with a great attitude."
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+          className="mx-auto  bg-red max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          // className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -58,16 +62,20 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+          <p className="font-playfair text-2xl">Tyler Brinkler</p>
+          <p className="mb-5 font-light">Former Colleague</p>
+          <p className="italic">
+            "Fred is driven and ambitious, a fast learner, and a great teammate.
+            He consistently showed very high attention to detail, commitment to
+            the work, and impressed me with his ability to make every project
+            polished, presentable, and something to be proud of."
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+          className="mx-auto  bg-yellow max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          // className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
+          //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -77,9 +85,14 @@ const Testimonials = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">“</p>
-          <p className="text-center text-xl">
-            Fames odio in at. At magna ornare dictum lectus.
+          <p className="font-playfair text-2xl">Armando Dominguez</p>
+          <p className="mb-5 font-light">Former Colleague</p>
+          <p className="italic">
+            "Fred has a knack for creativity and ensuring all of his projects
+            were professional level presentable. His insight into alternative
+            methods to making applications work smoother provided a fresh
+            perspective on our commitment to developing our skills as aspiring
+            software engineers."
           </p>
         </motion.div>
       </div>
