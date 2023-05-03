@@ -15,10 +15,10 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, descritpion }) => {
+const Project = ({ title, descritpion, fileName }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
+  // const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -26,7 +26,7 @@ const Project = ({ title, descritpion }) => {
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{descritpion}</p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={`../assets/${fileName}.png`} alt={fileName} />
     </motion.div>
   );
 };
@@ -76,17 +76,17 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project title="Morris Delta Realty" fileName="MdrLanding" />
+          <Project title="StreamlineDashboard" fileName="StreamlineLanding" />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project title="Morris Delta Realty" fileName="MdrViewer" />
+          <Project title="StreamlineDashboard" fileName="StreamlineSelect" />
+          <Project title="Morris Delta Realty" fileName="MdrCrud" />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
+          <Project title="StreamlineDashboard" fileName="StreamlineProject" />
+          <Project title="Morris Delta Realty" fileName="MdrMap" />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
