@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, descritpion, fileName }) => {
+const Project = ({ title, descritpion, fileName, link }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   // const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -23,8 +23,14 @@ const Project = ({ title, descritpion, fileName }) => {
   return (
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">{descritpion}</p>
+        <p className="text-4xl font-playfair">{title}</p>
+        <p className="mt-7 text-2xl">{descritpion}</p>
+        <a
+          className="mt-6 text-3xl underline hover:text-yellow transition duration-500  text-sky-800"
+          href={link}
+        >
+          Check out live site
+        </a>
       </div>
       <img src={`../assets/${fileName}.png`} alt={fileName} />
     </motion.div>
@@ -76,17 +82,52 @@ const Projects = () => {
           >
             Enterprise Application Interfaces
           </div>
-          <Project title="Morris Delta Realty" fileName="MdrLanding" />
-          <Project title="StreamlineDashboard" fileName="StreamlineLanding" />
+          <Project
+            title="Morris Delta Realty"
+            fileName="MdrLanding"
+            descritpion="Enterprise Application for a realty firm."
+            link="morrisdeltarealty.com"
+          />
+          <Project
+            title="StreamlineDashboard"
+            fileName="StreamlineLanding"
+            descritpion="Dashboard Application to improve application and feature build times within projects."
+            link="https://dashboard-demo-git-main-fmorris825.vercel.app/"
+          />
 
           {/* ROW 2 */}
-          <Project title="Morris Delta Realty" fileName="MdrViewer" />
-          <Project title="StreamlineDashboard" fileName="StreamlineSelect" />
-          <Project title="Morris Delta Realty" fileName="MdrCrud" />
+          <Project
+            title="Morris Delta Realty"
+            fileName="MdrViewer"
+            descritpion="Property viewing component to let clients browse photos and information about properties."
+            link="morrisdeltarealty.com"
+          />
+          <Project
+            title="StreamlineDashboard"
+            fileName="StreamlineSelect"
+            descritpion="Project selection component to organize tasks between applications."
+            link="https://dashboard-demo-git-main-fmorris825.vercel.app/"
+          />
+          <Project
+            title="Morris Delta Realty"
+            fileName="MdrCrud"
+            descritpion="Full CRUD functionality to connect to database hosted through AWS cloud services."
+            link="morrisdeltarealty.com"
+          />
 
           {/* ROW 3 */}
-          <Project title="StreamlineDashboard" fileName="StreamlineProject" />
-          <Project title="Morris Delta Realty" fileName="MdrMap" />
+          <Project
+            title="StreamlineDashboard"
+            fileName="StreamlineProject"
+            descritpion="Allows users CRUD functionality for tasks within projects to make planning more efficient."
+            link="https://dashboard-demo-git-main-fmorris825.vercel.app/"
+          />
+          <Project
+            title="Morris Delta Realty"
+            fileName="MdrMap"
+            descritpion="Allows clients to search neighborhood and view areas around properties via Google Maps API."
+            link="morrisdeltarealty.com"
+          />
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
