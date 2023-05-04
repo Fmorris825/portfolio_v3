@@ -99,7 +99,7 @@ const MySkills = () => {
           </div>
           <p className="mt-5">
             When creating an application, I focus on{" "}
-            <span className="text-blue">user friednliness</span>, while also
+            <span className="text-blue">user friendliness</span>, while also
             being able to produce{" "}
             <span className="text-blue">maintainable</span> and{" "}
             <span className="text-blue">reusable</span> code that is made to be{" "}

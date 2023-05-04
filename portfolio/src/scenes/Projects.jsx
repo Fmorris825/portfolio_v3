@@ -26,6 +26,7 @@ const Project = ({ title, descritpion, fileName, link }) => {
         <p className="text-4xl font-playfair">{title}</p>
         <p className="mt-7 text-2xl">{descritpion}</p>
         <a
+          target="_blank"
           className="mt-6 text-3xl underline hover:text-yellow transition duration-500  text-sky-800"
           href={link}
         >
