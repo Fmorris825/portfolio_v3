@@ -169,9 +169,9 @@ const MySkills = () => {
               Wildife & Conservation Biologist
             </span>{" "}
             which due to some unfortunate life events had to turn away form
-            something i greatly enjoyed, but redirected myself to a{" "}
+            something i greatly enjoyed, but redirected myself towards{" "}
             <span className="text-yellow">
-              new found passion of creating with code
+              my new found passion of creating with code
             </span>
             .
           </p>

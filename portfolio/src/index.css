@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@400;600&family=Pacifico&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@ body,
 .app {
   height: 100%;
   background-color: #010026;
-  /* background-color: #faeab1; */
+  /* background-color: #e5ba73; */
   /* @apply text-black; */
   @apply text-white;
 }

@@ -28,7 +28,7 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto  bg-blue max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          className="mx-auto  bg-blue max-w-[400px] h-fit justify-end p-16 mt-28 "
           // className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
           //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"
@@ -50,7 +50,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto  bg-red max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          className="mx-auto  bg-red max-w-[400px] h-fit justify-end p-16 mt-28"
           // className="mx-auto relative bg-red max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
           //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
           initial="hidden"
@@ -73,7 +73,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto  bg-yellow max-w-[400px] h-[350px] justify-end p-16 mt-48"
+          className="mx-auto  bg-yellow max-w-[400px] h-fit justify-end p-16 mt-28"
           // className="mx-auto relative bg-yellow max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
           //   before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
           initial="hidden"

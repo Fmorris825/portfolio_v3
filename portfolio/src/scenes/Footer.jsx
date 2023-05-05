@@ -10,7 +10,7 @@ const Footer = () => {
             Fredrick Morris
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2023 CodeFredDesign. All Rights Reserved.
+            ©2023 F3 Designs. All Rights Reserved.
           </p>
         </div>
       </div>
