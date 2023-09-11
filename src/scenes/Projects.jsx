@@ -30,7 +30,7 @@ const Project = ({ title, descritpion, fileName, link }) => {
           className="mt-6 text-3xl underline hover:text-yellow transition duration-500  text-sky-800 font-playfair"
           href={link}
         >
-          Check out live site
+          See More Here
         </a>
       </div>
       <img src={`../assets/${fileName}.png`} alt={fileName} />
